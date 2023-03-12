@@ -15,7 +15,7 @@ bool IsKPeriodic(const std::string& text, const int k)
     return true;    
 }
 
-bool IsKPeriodicAlternative(char* text, const int size, const int k)
+bool IsKPeriodicAlternative(const char* text, const int size, const int k)
 {
     if (k <= 0 || size <= 0 || (size % k)) return false;
     for (auto i = 0; i < k; ++i)
